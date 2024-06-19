@@ -29,8 +29,41 @@
 
         <div class="navbar-extra">
             <a href="#" id="search-button"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="/img/product/bijikopi.jpg" alt="Produk 1">
+                <div class="item-detail">
+                    <h3>Produk 1</h3>
+                    <div class="item-price">
+                        IDR 30K
+                    </div>
+                    <i data-feather="trash-2" class="remove-item"></i>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="/img/product/bijikopi.jpg" alt="Produk 1">
+                <div class="item-detail">
+                    <h3>Produk 1</h3>
+                    <div class="item-price">
+                        IDR 30K
+                    </div>
+                    <i data-feather="trash-2" class="remove-item"></i>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="/img/product/bijikopi.jpg" alt="Produk 1">
+                <div class="item-detail">
+                    <h3>Produk 1</h3>
+                    <div class="item-price">
+                        IDR 30K
+                    </div>
+                    <i data-feather="trash-2" class="remove-item"></i>
+                </div>
+            </div>
         </div>
 
         <div class="search-form">
@@ -103,7 +136,7 @@
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-image">
                     <img src="img/product/bijikopi.jpg" alt="Product 1">
@@ -111,21 +144,21 @@
                 <div class="product-content">
                     <h3>Biji Kopi 1</h3>
                     <div class="product-star">
-                        <i data-feather="star"></i>
-                        <i data-feather="star"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
                         <i data-feather="star"></i>
                         <i data-feather="star"></i>
                         <i data-feather="star"></i>
                     </div>
                     <div class="product-price">
-                        IDR 30K <span>IDR </span>
+                        IDR 30K <span>IDR 55K</span>
                     </div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-image">
                     <img src="img/product/bijikopi.jpg" alt="Product 1">
@@ -140,14 +173,14 @@
                         <i data-feather="star"></i>
                     </div>
                     <div class="product-price">
-                        IDR 30K <span>IDR </span>
+                        IDR 30K <span>IDR 55K</span>
                     </div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-image">
                     <img src="img/product/bijikopi.jpg" alt="Product 1">
@@ -162,7 +195,7 @@
                         <i data-feather="star"></i>
                     </div>
                     <div class="product-price">
-                        IDR 30K <span>IDR </span>
+                        IDR 30K <span>IDR 55K</span>
                     </div>
                 </div>
             </div>
@@ -212,6 +245,30 @@
             <p>Created by <a href="">faisalmasrimaulana</a>. | &copy; 2024.</p>
         </div>
     </footer>
+
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/product/bijikopi.jpg" alt="Produk 1">
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi aperiam repellat dicta eveniet aspernatur, aut recusandae veritatis est explicabo.</p>
+                    <div class="product-star">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 30K <span>IDR 55K</span>
+                    </div>
+                    <a href="#"><i data-feather="shopping-cart"> </i><span> add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 
