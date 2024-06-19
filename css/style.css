@@ -254,7 +254,7 @@ body {
     width: 100%;
     border-radius: 5px;
     mask-image: url(../img/coffee.svg);
-    mask-size: 80%;
+    mask-size: 72%;
     mask-repeat: no-repeat;
     mask-position: center;
 }
